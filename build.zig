@@ -30,6 +30,8 @@ pub fn build(b: *std.Build) void {
         .flags = &.{ "-std=c++14", "-Wall", "-Wextra", "-Wpedantic", "-Wpedantic-errors" },
     });
 
+    exe.root_module.addIncludePath(b.path("include"));
+
     exe.root_module.linkSystemLibrary("pthread", .{});
 
     const install_exe = b.addInstallArtifact(exe, .{});
