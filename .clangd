@@ -1,0 +1,8 @@
+CompileFlags:
+  Compiler: clang++
+  Add:
+    - -std=c++14
+    - -I/home/parallels/tuna/include
+    - -Wall
+    - -Wpedantic
+    - -Wextra
