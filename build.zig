@@ -27,7 +27,7 @@ pub fn build(b: *std.Build) void {
             "./src/app/main.cc",
         },
 
-        .flags = &.{ "-std=c++14", "-Wall", "-Wextra", "-Wpedantic", "-Wpedantic-errors" },
+        .flags = &.{ "-std=c++14", "-Wall", "-Wextra", "-Wpedantic" },
     });
 
     exe.root_module.addIncludePath(b.path("include"));
